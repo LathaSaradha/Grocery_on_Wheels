@@ -97,3 +97,8 @@ switch to sql mode
 4. All the tables and database will be created.
 
 5. Open Intellij and create a new project with the downloaded files.
+
+6. Execute the "Application.java" file.
+
+
+
