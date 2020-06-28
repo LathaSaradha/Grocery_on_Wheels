@@ -116,6 +116,6 @@ Open the "Application.java" file and run the file.
 
 7. Enter database name as "grocery_on_wheels" . Enter the username and password. 
 
-
+8. Data will be entered in the Database with available csv files and you can query the database.
 
 
