@@ -25,9 +25,12 @@ To setup Database
 1. Install appropriate MySQLDBMS for your opertaing system using 'https://dev.mysql.com/downloads/' and select 'MySQL community Server' edition.
 2. Select the operating system and click the image and select the larger size file. 
 
-Open the downloaded file and start installation the 
+Open the downloaded file and start installation.
+
 3. Read and accept the license agreement
+
 4. From the "Choosing a Setup Type" select the "Developer Default"
+
 5. On the following Installation menu click "Execute" for installation.
 6. On the Group Replication menu, select "Standalone MySQL Server/Classic MySQL Replication" and On the Type and Networking, 
 7. keep the default value for config type to "Development Computer" and the Port address to be "3306" then click Next.
