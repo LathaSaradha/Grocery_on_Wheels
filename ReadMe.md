@@ -108,10 +108,13 @@ Execute the following command
 
 4. All the tables and database will be created. You can verify in Intellij
 
-5. Open Intellij and open the respective project.
+5. Open Intellij and open the respective project. 
+
+Open the "Application.java" file and run the file.
 
 6. Execute the "Application.java" file.
 
+7. Enter database name as "grocery_on_wheels" . Enter the username and password. 
 
 
 
