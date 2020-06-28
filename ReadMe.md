@@ -22,8 +22,10 @@ Initial Steps
 
 To setup Database
 -------------------
-1.Install appropriate MySQLDBMS for your opertaing system using 'https://dev.mysql.com/downloads/'
-2. Open the downloaded file and start installation. 
+1. Install appropriate MySQLDBMS for your opertaing system using 'https://dev.mysql.com/downloads/' and select 'MySQL community Server' edition.
+2. Select the operating system and click the image and select the larger size file. 
+
+Open the downloaded file and start installation the 
 3. Read and accept the license agreement
 4. From the "Choosing a Setup Type" select the "Developer Default"
 5. On the following Installation menu click "Execute" for installation.
