@@ -118,4 +118,5 @@ Open the "Application.java" file and run the file.
 
 8. Data will be entered in the Database with available csv files and you can query the database.
 
+![Test Image 1](screenshot_for_creating_tables.jpg)
 
