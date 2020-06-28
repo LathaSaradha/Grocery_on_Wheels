@@ -37,7 +37,7 @@ Open the downloaded file and start installation.
 7. On the "Product Configuration" tab select next to configure the product.
 8. 
 7. On the High Availability menu, select "Standalone MySQL Server/Classic MySQL Replication" and On the Type and Networking, 
-8. keep the default value for config type to "Development Computer" and the Port address to be "3306" then click Next.
+8. Keep the default value for config type to "Development Computer". Check TCP/IP and select the Port address to be "3306" then click Next.
 9. On the Authentication Method, keep the default of "Use Strong Password ..." as the selected option and set your MySQL Root password (use a simple pass code)
 10. On the Windows Service menu, keep the default selections
 11.On Apply Configuration menu, click on "Execute" button.
