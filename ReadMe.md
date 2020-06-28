@@ -106,7 +106,9 @@ Execute the following command
 
  MySQL  JS > source File$Folder$Path\TableCreation.sql
 
-4. All the tables and database will be created. You can verify in Intellij
+4. All the tables and database will be created. You can verify in Intellij in the DB Browser tab.
+
+![Test Image 1](screenshot_for_creating_tables.jpg)
 
 5. Open Intellij and open the respective project. 
 
@@ -116,7 +118,12 @@ Open the "Application.java" file and run the file.
 
 7. Enter database name as "grocery_on_wheels" . Enter the username and password. 
 
+![Test Image 2](Screenshot_for_Application.jpg)
+
 8. Data will be entered in the Database with available csv files and you can query the database.
 
-![Test Image 1](screenshot_for_creating_tables.jpg)
+
+![Test Image 3](Screenshot_for_listing_queries_in_application.jpg)
+
+
 
