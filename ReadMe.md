@@ -100,16 +100,19 @@ Enter password
 3. Clone the files from Github repository. 
 
 File$Folder$Path ="Path of the folder where the cloning has been done in your system"
+Make sure that the folder path have no spaces in the folder names.
 
 Execute the following command
 
  MySQL  JS > source File$Folder$Path\TableCreation.sql
 
-4. All the tables and database will be created.
+4. All the tables and database will be created. You can verify in Intellij
 
-5. Open Intellij and create a new project with the downloaded files.
+5. Open Intellij and open the respective project.
 
-8. Execute the "Application.java" file.
+6. Execute the "Application.java" file.
+
+
 
 
 
