@@ -23,18 +23,17 @@ Initial Steps
 To setup Database
 -------------------
 1.Install appropriate MySQLDBMS for your opertaing system using 'https://dev.mysql.com/downloads/'
-6. Open the downloaded file and start installation. 
-7. Read and accept the license agreement
-8. From the "Choosing a Setup Type" select the "Developer Default"
-9. On the following Installation menu click "Execute" for installation.
-10 On the Group Replication menu, select "Standalone MySQL Server/Classic MySQL Replication" and On the Type and Networking, 
-keep the default value for config type to "Development Computer" and the Port address to be "3306" then click Next.
-
-Step 12:On the Authentication Method, keep the default of "Use Strong Password ..." as the selected option and set your MySQL Root password (use a simple pass code) 
-Step 14:On the Windows Service menu, keep the default selections
-Step 15:on Apply Configuration menu, click on "Execute" button.
-Step 16:The installation wizard will ask to connect to server -so insert "root" as username and then insert yourpassword.
-Step 17:Click finish -you will see mysql-js (which is mysql shell) and MySQL workbench
+2. Open the downloaded file and start installation. 
+3. Read and accept the license agreement
+4. From the "Choosing a Setup Type" select the "Developer Default"
+5. On the following Installation menu click "Execute" for installation.
+6. On the Group Replication menu, select "Standalone MySQL Server/Classic MySQL Replication" and On the Type and Networking, 
+7. keep the default value for config type to "Development Computer" and the Port address to be "3306" then click Next.
+8. On the Authentication Method, keep the default of "Use Strong Password ..." as the selected option and set your MySQL Root password (use a simple pass code)
+9. On the Windows Service menu, keep the default selections
+10.On Apply Configuration menu, click on "Execute" button.
+11.The installation wizard will ask to connect to server -so insert "root" as username and then insert yourpassword.
+12.Click finish -you will see mysql-js (which is mysql shell) and MySQL workbench
 
 
 
