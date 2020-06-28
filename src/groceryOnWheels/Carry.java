@@ -84,7 +84,7 @@ public class Carry {
 
 					}
 					
-					System.out.println( orderID + " is going to be in Carried by the van ID :" + vanid);
+					//System.out.println( orderID + " is going to be in Carried by the van ID :" + vanid);
 				}
 				
 				
