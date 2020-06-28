@@ -78,24 +78,30 @@ Test the connection to confirm the establishment of the connection. Click 'OK' t
 
 File -> Project Structure -> Modules -> Dependencies > "+" Jars or directories 
 
-Select the "mysql-connector-java-8.0.20" jar file downloaded from 
+Select the "mysql-connector-java-8.0.20" jar file downloaded from the website of mysql jdbc connector file.
+
+Click 'OK' to close the DB setting.
 
 
 
 Setting up the project
 ----------------------
-1. Connect to the installed MySQL using your username (the one you placed while installing MySQL), using the following command where “root” is your username: 
+1. Open 'MySqL  shell'.
+
+Connect to the installed MySQL using your username (the one you placed while installing MySQL), using the following command where “root” is your username: 
  MySQL  JS > \connect root@localhost
 
 Enter password
 
-switch to sql mode
+2. To switch to sql mode
 
- MySQL  localhost:33060+ ssl  JS > \sql
+ MySQL  localhost:33060+ ssl  JS > \sql;
 
-2. Clone the files from the repository
+3. Clone the files from Github repository. 
 
-3. Execute the following command
+File$Folder$Path ="Path of the folder where the cloning has been done in your system"
+
+Execute the following command
 
  MySQL  JS > source File$Folder$Path\TableCreation.sql
 
@@ -103,7 +109,7 @@ switch to sql mode
 
 5. Open Intellij and create a new project with the downloaded files.
 
-6. Execute the "Application.java" file.
+8. Execute the "Application.java" file.
 
 
 
