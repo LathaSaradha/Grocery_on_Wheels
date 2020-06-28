@@ -11,7 +11,7 @@ Instead, customers can also send the required items list to the seller so that t
 keep the foodstuff ready to pick before hitting one’s nearest location.
 This application enables the customers to search for any product and add to the cart and pay them using the
 saved card details. It is developed solely to focus on food products available to common people so that
-people should not bother about going to the store and buying especially in unsuitable weather conditions."
+people should not bother about going to the store and buying especially in unsuitable environment.
 We need database, because the project contains abundant of information regarding Users, Payment, Stock
 of Products, Orders , Van and its schedule which has to be stored in DB to keep the track of user activities,
 products in inventory and the visits of vans. So, DB is an important part of the system and one cannot go
