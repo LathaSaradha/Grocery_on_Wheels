@@ -38,12 +38,11 @@ Open the downloaded file and start installation.
  
 8. On the High Availability menu, select "Standalone MySQL Server/Classic MySQL Replication" and On the Type and Networking, 
 9. Keep the default value for config type to "Development Computer". Check TCP/IP and select the Port address to be "3306" then click Next.
-10. On the Authentication Method, keep the default of "Use Strong Password ..." as the selected option and set your MySQL Root password (use a simple pass code)
-11. On the Windows Service menu, keep the default selections
-11.On Apply Configuration menu, click on "Execute" button.
-12.The installation wizard will ask to connect to server -so insert "root" as username and then insert yourpassword.
-13.Click finish -you will see mysql-js (which is mysql shell) and MySQL workbench
-
+10.On the Authentication Method, keep the default of "Use Strong Password ..." as the selected option and set your MySQL Root password (use a simple pass code)
+11. On the Windows Service menu, keep the default selections.
+11.The installation wizard will ask to connect to server -so insert "root" as username and then insert your password.
+12. On Apply Configuration menu, click on "Execute" button.
+13.Click finish. You will see mysql-js (which is mysql shell) and MySQL workbench
 
 
 To setup Java Application
@@ -55,12 +54,13 @@ To set up the Java connection with Database
 
 1. Download Connector/J JDBC driver so our program can connect to MySQL. Go to this web page (http://www.mysql.com/downloads/connector/j/)
 
-Select 'Platform Independent'
+In the operating System menu , Select 'Platform Independent'. Select the largest size file.
 
-2. Open MySql WorkBench, Click on the "+" symbol.
-From the set up wizard,  create a new connection with a name of your choice.
+2. Open MySql WorkBench, Click on the "+" symbol. From the set up wizard,  create a new connection with a name of your choice. (eg: mydbconnection)
 
-3. Open intellij IDE, Clone the current project
+Check "test connection".And after successful connection , click 'OK'.
+
+3. Open intellij IDE, Clone the current project.
 
 File -> Settings -> Plugins -> Search for "Database Navigator" . Install "Database Navigator".
 
@@ -68,12 +68,15 @@ Restart IDE to apply the plugins.
 
 View -> Tool Windows -> DB Browser.
 
-Select the " +" symbol and select "mySQL" 
+Select the "+" symbol and select "mySQL" 
 
-4. Fill the form with connection name selected earlier in mysql connection.enter username and password.
-Test the connection to confirm the establishment of the connection.
+4. Fill the form with connection name selected earlier in mysql connection.
+Enter username and password.
+Test the connection to confirm the establishment of the connection. Click 'OK' to close the DB setting.
 
-File -> Project Structure -> Modeules -> Dependencies > "+" Jars or directories 
+5. To add the mysqlconnector jar file.
+
+File -> Project Structure -> Modules -> Dependencies > "+" Jars or directories 
 
 Select the "mysql-connector-java-8.0.20" jar file downloaded from 
 
