@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.io.Console;
 
 import java.util.Scanner;
 
@@ -15,40 +16,48 @@ public class Application {
 
 		System.out.println("Entering the data in the tables");
 		Scanner kb = new Scanner(System.in);
-		System.out.println("Enter the Database Name");
+		System.out.println("Enter the Database Name:");
 		String DBName = kb.nextLine();
-		System.out.println("Enter the User Name");
+		System.out.println("Enter the User Name: ");
 		String UserName = kb.nextLine();
 
-		System.out.println("Enter the Password");
-		String Password = kb.nextLine();
-				try {
-					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + DBName, UserName, Password);
-					Driver driver= new Driver();
-					driver.insertRecords(con);
+		System.out.println("Enter the Password: ");
+		String Password =kb.nextLine();
+		//String Password =new String(cnsl.readPassword("Please enter your password: "));
 
-				}
-				catch (
+		//String password = new jline.ConsoleReader().readLine(new Character('*'));
 
-						SQLException e) {
+		System.out.println("Do you want to add data in the tables in the Database? Enter Y or N");
+		String answer= kb.nextLine();
 
-					e.printStackTrace();
-				}
+		if(answer.equals("Y")) {
+			try {
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + DBName, UserName, String.valueOf(Password));
+				Driver driver = new Driver();
+				driver.insertRecords(con);
+				con.close();
+			} catch (
 
+					SQLException e) {
 
+				e.printStackTrace();
+			}
 
+		}
 
-		System.out.println("Please enter which query to be executed");
+		System.out.println();
+
 		int entry;
-
+		System.out.println("Please enter which query to be executed...");
 
 		Connection con;
 		try {
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + DBName, UserName, Password);
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + DBName, UserName, String.valueOf(Password));
 
 			do {
 
 				optionsDisplay();
+				System.out.println("Please enter which query to be executed...");
 				entry = Integer.parseInt(kb.nextLine());
 
 				switch (entry) {

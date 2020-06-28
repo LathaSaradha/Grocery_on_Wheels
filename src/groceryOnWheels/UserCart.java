@@ -29,6 +29,7 @@ public class UserCart {
 			ResultSet rsForUsers = stmt.executeQuery("select UserID from users ORDER BY RAND() LIMIT 200");
 
 			PreparedStatement ps;
+			System.out.println("Entering Records in UserCart Table.....");
 
 			while (rsForUsers.next())
 
@@ -58,7 +59,7 @@ public class UserCart {
 					listPrice.add(rsForInventory.getDouble("price"));
 					listDiscount.add(rsForInventory.getDouble("discount"));
 				}
-				 System.out.println("Entering Records in UserCart Table.....");
+
 
 				while (count < numOfItems) {
 					linenum++;

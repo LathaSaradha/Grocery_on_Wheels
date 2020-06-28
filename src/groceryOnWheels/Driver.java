@@ -15,8 +15,6 @@ public class Driver {
 
         try {
 
-
-
             String filename = "Users.csv";
 
 
@@ -46,12 +44,12 @@ public class Driver {
             Carry c = new Carry();
             c.enterRows(con);
 
-
+            //Van Details Table
             filename = "vanDetails.csv";
             VanDetails vanObj = new VanDetails(filename);
             vanObj.insertVan(con);
 
-
+            //Van Schedule Table
             VanSchedule schObj = new VanSchedule();
             schObj.insertvanSchedule(con);
 

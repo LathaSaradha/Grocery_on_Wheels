@@ -67,7 +67,7 @@ public class VanDetails {
 
 
             lineReader.close();
-            myConn.close();
+
             ps.close();
 
 

@@ -8,7 +8,7 @@ public class VanSchedule {
 
 
     public void insertvanSchedule(Connection myConn) {
-        System.out.println(" vanschedule details method");
+        System.out.println("Vanschedule details method");
         try {
 
             Random rand = new Random();

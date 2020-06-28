@@ -43,7 +43,7 @@ public class PaymentCardDetails {
 
 			while (rs.next()) {
 				linenum++;
-				System.out.println("Row " + linenum + " inserted" + " in PaymentCardDetails Table");
+				//System.out.println("Row " + linenum + " inserted" + " in PaymentCardDetails Table");
 				int UserId = rs.getInt("UserID");
 				String AptNo = rs.getString("AptNo");
 
