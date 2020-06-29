@@ -11,7 +11,7 @@ public class Driver {
 
     public void insertRecords(Connection con) {
 
-        Scanner kb = new Scanner(System.in);
+
 
         try {
 
@@ -63,7 +63,7 @@ public class Driver {
 
         }
 
-        kb.close();
+
 
     }
 

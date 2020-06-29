@@ -45,9 +45,6 @@ public class Application {
 
 		}
 
-
-		System.out.println();
-
 		int entry;
 
 

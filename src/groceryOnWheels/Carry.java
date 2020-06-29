@@ -95,7 +95,7 @@ public class Carry {
 			stmt.close();
 			stmt2.close();
 			stmt3.close();
-
+			System.out.println("Records added in Carry Table");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
