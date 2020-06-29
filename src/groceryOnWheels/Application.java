@@ -45,88 +45,91 @@ public class Application {
 
 		}
 
+
 		System.out.println();
 
 		int entry;
-		System.out.println("Please enter which query to be executed...");
+
 
 		Connection con;
 		try {
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + DBName, UserName, String.valueOf(Password));
 
-			do {
-
+			do{
 				optionsDisplay();
 				System.out.println("Please enter which query to be executed...");
-				entry = Integer.parseInt(kb.nextLine());
+				String s = kb.nextLine();
+				entry = Integer.parseInt(s);
+
 
 				switch (entry) {
-				case 1:
-					case1(kb, con);
-					break;
+					case 1:
+						case1(kb, con);
+						break;
 
-				case 2:
-					Statement stmt2 = con.createStatement();
-					int count2=0;
-					ResultSet rs2 = stmt2.executeQuery("SELECT company_name,count(item_name) AS count FROM inventory	GROUP BY  company_name ORDER BY count(item_name)  DESC");
-					while (rs2.next()) {
-						System.out.println(rs2.getString("company_name") + " : " + rs2.getInt("count"));
-					count2++;
-					}
-					System.out.println("Total rows: " + count2);
-					System.out.println();
-					break;
+					case 2:
+						Statement stmt2 = con.createStatement();
+						int count2 = 0;
+						ResultSet rs2 = stmt2.executeQuery("SELECT company_name,count(item_name) AS count FROM inventory	GROUP BY  company_name ORDER BY count(item_name)  DESC");
+						while (rs2.next()) {
+							System.out.println(rs2.getString("company_name") + " : " + rs2.getInt("count"));
+							count2++;
+						}
+						System.out.println("Total rows: " + count2);
+						System.out.println();
+						break;
 
-				case 3:
-					Statement stmt3 = con.createStatement();
-					ResultSet rs3 = stmt3.executeQuery("SELECT item_name FROM inventory WHERE item_qty=0");
-					int count3 = 0;
-					while (rs3.next()) {
-						count3++;
-						System.out.println(rs3.getString("item_name"));
+					case 3:
+						Statement stmt3 = con.createStatement();
+						ResultSet rs3 = stmt3.executeQuery("SELECT item_name FROM inventory WHERE item_qty=0");
+						int count3 = 0;
+						while (rs3.next()) {
+							count3++;
+							System.out.println(rs3.getString("item_name"));
 
-					}
-					System.out.println("Total rows: " + count3);
-					System.out.println();
-					break;
+						}
+						System.out.println("Total rows: " + count3);
+						System.out.println();
+						break;
 
-				case 4:
-					case4(kb, con);
-					break;
+					case 4:
+						case4(kb, con);
+						break;
 
-				case 5:
-					case5(con);
-					break;
+					case 5:
+						case5(con);
+						break;
 
-				case 6:
-					case6(con);
-					break;
+					case 6:
+						case6(con);
+						break;
 
-				case 7:
-					case7(kb, con);
-					break;
+					case 7:
+						case7(kb, con);
+						break;
 
-				case 8:
-					case8(kb, con);
-					break;
+					case 8:
+						case8(kb, con);
+						break;
 
-				case 9:
-					case9(kb, con);
-					break;
+					case 9:
+						case9(kb, con);
+						break;
 
-				case 10:
+					case 10:
 
-					case10(kb, con);
-					break;
+						case10(kb, con);
+						break;
 
-				case 0:
-					System.out.println("Quitting the Program");
-					System.out.println("Thank you for using our application");
-					break;
-
+					case 0:
+						System.out.println("Quitting the Program");
+						System.out.println("Thank you for using our application");
+						break;
 				}
 
-			} while (entry != 0);
+
+
+			}while(entry!=0);
 
 		} catch (
 
